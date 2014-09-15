@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<title>Responsive Previewer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	
+	<!-- Css -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="css/template.css" rel="stylesheet" media="screen">
+
+
+	<script>if ( top !== self ) top.location.replace( self.location.href );// Hey, don't iframe my iframe!</script>
+
+
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+	
+	<!--[if lt IE 9]>
+		<script>/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark meter nav output progress section summary subline time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script>
+	<![endif]-->
+    
+</head>
+	
+<body>
+
+<!-- Header -->
+<header class="switcher-bar clearfix">
+
+	<!-- Logo -->
+	<div class="logo textual pull-left">
+		<a href="#" title="Switcher">
+			Responsive Viewer
+		</a>
+	</div>
+
+	<div class="urlInput input-group">
+	  <input type="text" class="form-control" placeholder="url" id="urlField" type="url" required>
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="goBtn">Go!</button>
+      </span>
+	</div>
+
+	<nav id="views">
+		<!-- Bar Remove Button -->
+		<div class="remove-btn header-btn pull-right">
+			<a href="#" title="Close this bar" class="icon-remove"></a>
+		</div>
+		
+		<!-- Mobile Button -->
+		<div class="mobile-btn header-btn pull-right hidden-xs">
+			<a href="#" title="Smartphone View" class="icon-mobile-phone"></a>
+		</div>
+
+		<!-- Tablet Button -->
+		<div class="tablet-btn header-btn pull-right hidden-xs">
+			<a href="#" title="Tablet View" class="icon-tablet"></a>
+		</div>
+
+		<!-- Laptop Button -->
+		<div class="laptop-btn header-btn pull-right hidden-xs">
+			<a href="#" title="Laptop View" class="icon-laptop"></a>
+		</div>	
+		
+		<!-- Desktop Button -->
+		<div class="desktop-btn header-btn pull-right hidden-xs current">
+			<a href="#" title="Desktop View" class="icon-desktop"></a>
+		</div>
+	</nav>
+</header>
+
+
+<!-- Website iframe -->
+<iframe class="web-iframe" frameborder="0" border="0"></iframe>
+
+<!-- Preloader -->
+<div class="preloader"></div>
+<div class="preloading-icon"><i class="icon-bolt"></i></div>
+
+<!-- Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/application.js"></script>
+	
+</body>
+
+</html>
