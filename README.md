@@ -10,3 +10,6 @@ The project provides 4 different view switches: desktop, laptop, tablet, mobile.
 I also added a querystring option for url, so that the page will jump to the appropriate page immediately.
 
 
+Demo
+=====
+[See example](http://seventyseven.net/test/previewer/)
